@@ -14,6 +14,8 @@
 		FA28593A21D5817F00467CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA28593821D5817F00467CA4 /* LaunchScreen.storyboard */; };
 		FA28594521D5817F00467CA4 /* SearchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28594421D5817F00467CA4 /* SearchBarTests.swift */; };
 		FA28595021D5817F00467CA4 /* SearchBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28594F21D5817F00467CA4 /* SearchBarUITests.swift */; };
+		FA28595F21D581E200467CA4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28595E21D581E200467CA4 /* Movie.swift */; };
+		FA28596121D5826A00467CA4 /* TableViewCellCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28596021D5826A00467CA4 /* TableViewCellCustom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		FA28594B21D5817F00467CA4 /* SearchBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA28594F21D5817F00467CA4 /* SearchBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarUITests.swift; sourceTree = "<group>"; };
 		FA28595121D5817F00467CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA28595E21D581E200467CA4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		FA28596021D5826A00467CA4 /* TableViewCellCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellCustom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,14 @@
 		FA28592E21D5817900467CA4 /* SearchBar */ = {
 			isa = PBXGroup;
 			children = (
+				FA28595D21D581C200467CA4 /* Models */,
 				FA28592F21D5817900467CA4 /* AppDelegate.swift */,
 				FA28593121D5817900467CA4 /* ViewController.swift */,
 				FA28593321D5817900467CA4 /* Main.storyboard */,
 				FA28593621D5817F00467CA4 /* Assets.xcassets */,
 				FA28593821D5817F00467CA4 /* LaunchScreen.storyboard */,
 				FA28593B21D5817F00467CA4 /* Info.plist */,
+				FA28596021D5826A00467CA4 /* TableViewCellCustom.swift */,
 			);
 			path = SearchBar;
 			sourceTree = "<group>";
@@ -123,6 +129,14 @@
 				FA28595121D5817F00467CA4 /* Info.plist */,
 			);
 			path = SearchBarUITests;
+			sourceTree = "<group>";
+		};
+		FA28595D21D581C200467CA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA28595E21D581E200467CA4 /* Movie.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +272,8 @@
 			files = (
 				FA28593221D5817900467CA4 /* ViewController.swift in Sources */,
 				FA28593021D5817900467CA4 /* AppDelegate.swift in Sources */,
+				FA28596121D5826A00467CA4 /* TableViewCellCustom.swift in Sources */,
+				FA28595F21D581E200467CA4 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
