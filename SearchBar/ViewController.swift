@@ -74,8 +74,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
          */
         
         //FILTRADO POR CUALQUIER CONTENIDO DEL TÍTULO
-        filterMovies = listMovies.filter({$0.title.lowercased().contains(searchText.lowercased())})
-        isSearching = true
+        //filterMovies = listMovies.filter({$0.title.lowercased().contains(searchText.lowercased())})
+        
+        filterMovies = listMovies.filter({ (movie) -> Bool in
+            return movie.title.lowercased().contains(searchText.lowercased())
+        })
+        
+        isSearching = searchText != "" ? true : false
+
         tableView.reloadData()
     }
     
